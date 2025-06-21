@@ -1,0 +1,1 @@
+// JS básico si se necesita luego
