@@ -6,7 +6,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">Cachuelos SA</a>
@@ -21,14 +21,41 @@
   </div>
 </nav>
 
-  <div class="container py-4">
-    
-      <h2>Mi Perfil</h2>
-      <p><strong>Nombre:</strong> Esteban Henriquez</p>
-      <p><strong>Habilidades:</strong> Electricidad, pintura, jardinería</p>
-      <p><strong>Historial:</strong> 8 trabajos completados</p>
-    
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<div class="container py-4">
+  <h2>Mi Perfil</h2>
+
+  <p><strong>Nombre:</strong> Esteban Henriquez</p>
+  <p><strong>Habilidades:</strong> Electricidad, pintura, jardinería</p>
+  <p><strong>Historial:</strong> 8 trabajos completados</p>
+
+  <hr>
+
+  <form>
+    <div class="mb-3">
+      <label class="form-label"><strong>Nivel Académico:</strong></label>
+      <select class="form-select" required>
+        <option value="">Selecciona una opción</option>
+        <option value="bachiller">Bachiller</option>
+        <option value="tecnico">Técnico</option>
+        <option value="tecnologo">Tecnólogo</option>
+        <option value="universitario">Universitario</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label"><strong>Subir Título Académico:</strong></label>
+      <input type="file" class="form-control" accept=".pdf,.jpg,.png">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label"><strong>Subir Certificado de Antecedentes Policiales:</strong></label>
+      <input type="file" class="form-control" accept=".pdf,.jpg,.png">
+    </div>
+
+    <button class="btn btn-primary" type="submit">Guardar Cambios</button>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
